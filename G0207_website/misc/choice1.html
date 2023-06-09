@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Opportunity Blog</title>
+  <link rel="stylesheet" type="text/css" href="../styles/risk1.css">
+  <style>
+    /* Add custom styles here */
+    .opportunity-card {
+      background-color: #f7f7f7;
+      padding: 20px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="opportunities">
+    <h2>Introduction</h2>
+    <div class="opportunity-card">
+      <p>In today's digital age, the proliferation of disinformation poses 
+        significant challenges in distinguishing between truth and falsehood. 
+        Technological advancements, such as deepfakes and sophisticated
+         disinformation techniques, have made it increasingly difficult to 
+         discern real information from fake. The sheer volume and speed at which
+          information spreads on digital platforms further compound this challenge.
+           Additionally, cognitive biases, the global reach of disinformation, concerns about freedom of speech,
+            and the lack of digital literacy among individuals contribute to the complexity of the issue. 
+      </p>
+    </div>
+  </div>
+
+  <div class="starry-background">
+    <div class="stars-container">
+      <!-- Stars will be dynamically generated here -->
+    </div>
+  </div>
+  
+  <footer>
+    <p>Footer text goes here</p>
+  </footer>
+
+  <script>
+    // JavaScript code to generate stars and apply random colors
+    const starsContainer = document.querySelector('.stars-container');
+    const numStars = 200; // Adjust the number of stars here
+
+    for (let i = 0; i < numStars; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.left = `${Math.random() * 100}%`;
+      star.style.top = `${Math.random() * 100}%`;
+      star.style.backgroundColor = `rgb(
+        ${Math.floor(Math.random() * 256)},
+        ${Math.floor(Math.random() * 256)},
+        ${Math.floor(Math.random() * 256)}
+      )`;
+      star.style.animationDuration = `${Math.random() * 2 + 1}s`;
+      starsContainer.appendChild(star);
+    }
+  </script>
+</body>
+</html>

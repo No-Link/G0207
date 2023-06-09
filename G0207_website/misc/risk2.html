@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Opportunity Blog</title>
+  <link rel="stylesheet" type="text/css" href="../styles/choice2.css">
+  <style>
+    /* Add custom styles here */
+    .opportunity-card {
+      background-color: #f7f7f7;
+      padding: 20px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="opportunities">
+    <h2>PHYSICAL RISKS</h2>
+    <div class="opportunity-card">
+      <p>The interconnected realm of cyber threats and national security is a prominent battleground where disinformation finds fertile ground. The potential for malevolent actors to exploit disinformation as a tool in facilitating cyber threats like phishing attacks or broader mass-influence operations should not be underestimated. Such threat actors may employ a wide array of disinformation strategies, including using misleading narratives or outright falsehoods to coax a target into disclosing sensitive information, or enticing them into downloading malicious software.<br><br>
+
+ 
+
+        In the constantly evolving landscape of cybersecurity, new and innovative methods of disinformation are constantly being developed, as the research piece "How disinformation evolved in 2020" highlights. As an example, malicious threat actors started "using AI-generated profile pictures and handle switching, where users change not just their username and bio, but also their handles, making discovering and assessing their prior activity difficult or impossible" (Goldstein & Grossman, 2021). This creates an ongoing and increased risk to national security, necessitating a dynamic and proactive approach towards disinformation detection and countermeasures. It's imperative to ensure that defences are robust, constantly updated, and capable of addressing the shifting challenges posed by the fast-evolving nature of disinformation strategies. <br><br>
+        
+         
+        
+        Turning to the sphere of public health, the risks associated with disinformation become even more tangible and immediate. In this domain, false or misleading information about diseases, treatments, and preventative measures can have direct and detrimental impacts on individual and community health outcomes. The dangers become even more pronounced during global health crises, such as the COVID-19 pandemic, where misinformation can be not just harmful, but potentially life-threatening.<br><br> 
+        
+         
+        
+        This was clearly highlighted in the case study "Using Misinformation as a Political Weapon: COVID-19 and Bolsonaro in Brazil". Investigating the government-backed "Office of Hatred", Congresswoman Natália Bonavides described how "misinformation minimizes disease severity, discredits social isolation, and undermines trust in public data" (Ricard & Medeiros, 2021). While there's no direct evidence implicating the government, President Bolsonaro has advocated misinformation and urged Brazilians to disregard social isolation, causing internal governmental tension and the dismissal of the Health Secretary. In an era where health information is widely accessible and rapidly spread on social media and feeds, the importance of accuracy and authenticity in this information is vital. It becomes crucial to prioritise rigorous information validation processes and educational initiatives to ensure the public is accurately informed, thus enabling appropriate health behaviours and safeguarding public health.<br><br> 
+      </p>
+    </div>
+  </div>
+
+  <div class="starry-background">
+    <div class="stars-container">
+      <!-- Stars will be dynamically generated here -->
+    </div>
+  </div>
+  
+  <script>
+    // JavaScript code to generate stars and apply random colors
+    const starsContainer = document.querySelector('.stars-container');
+    const numStars = 200; // Adjust the number of stars here
+
+    for (let i = 0; i < numStars; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.left = `${Math.random() * 100}%`;
+      star.style.top = `${Math.random() * 100}%`;
+      star.style.backgroundColor = `rgb(
+        ${Math.floor(Math.random() * 256)},
+        ${Math.floor(Math.random() * 256)},
+        ${Math.floor(Math.random() * 256)}
+      )`;
+      star.style.animationDuration = `${Math.random() * 2 + 1}s`;
+      starsContainer.appendChild(star);
+    }
+  </script>
+</body>
+</html>

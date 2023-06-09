@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Opportunity Blog</title>
+  <link rel="stylesheet" type="text/css" href="../styles/choice1.css">
+  <style>
+    /* Add custom styles here */
+    .opportunity-card {
+      background-color: #f7f7f7;
+      padding: 20px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="opportunities">
+    <h2>SOCIAL RISKS</h2>
+    <div class="opportunity-card">
+      <p>Disinformation can deepen divisions within societies by exploiting existing biases and stoking fear or anger. It can be used to spread hate speech, incite violence, or defame groups or individuals, leading to conflict. It can create echo chambers, where people are exposed only to information that reinforces their beliefs, leading to radicalisation.<br><br> 
+
+ 
+
+        Disinformation can wear down trust in institutions, media, and experts, portraying them as corrupt or incompetent, as evidenced in the "Investigating the Spread of Russian Disinformation about Biolabs in Ukraine on Twitter Using Social Network Analysis" study (Alieva, Ng, & Carley, 2022) This erosion can destabilise societies and nurture an environment where conspiracy theories prosper. It can also lead to cynicism, apathy, and a decline in social cohesion. <br><br>
+        
+         
+        
+        Disinformation is frequently used to manipulate public opinion, particularly during election periods. False narratives about candidates or key issues are propagated by threat actors with the intent to mislead voters and manipulate democratic proceedings. This unchecked practice has the potential to destabilize political environments and trigger social unrest. <br><br>
+        
+         
+        
+        We've seen this in real-world instances, notably during the 2016 U.S. Presidential Election. Hillary Clinton's campaign chair, John Podesta, was targeted by a spear phishing attack from Russian-backed hackers. As a result, thousands of Podesta's private documents were "leaked to the public, hindering Clinton's campaign" (Centre For AI Safety, 2023). This strategic breach had a profound impact on the election, demonstrating the extent to which threat actors will go to influence democratic processes.<br><br> 
+        
+         
+        
+        Moreover, leading up to the Trump/Biden election, it was observed that RT, a Russian state-controlled international news network, adopted a tactical approach that "included the promotion of anti-Biden leaning content, with an emphasis on anti-establishment narratives" (Kuznetsova & Makhortykh, 2021).  This tactic, part of a concerted effort by Russia to disrupt the Biden campaign, underscores how disinformation can be deployed systematically to manipulate public opinion.<br><br> 
+        
+         
+        
+        In summary, the threat of disinformation to democratic processes is substantial and cannot be ignored. It requires our collective attention and effort to mitigate.<br><br> 
+      </p>
+    </div>
+  </div>
+
+  <div class="starry-background">
+    <div class="stars-container">
+      <!-- Stars will be dynamically generated here -->
+    </div>
+  </div>
+  
+  <script>
+    // JavaScript code to generate stars and apply random colors
+    const starsContainer = document.querySelector('.stars-container');
+    const numStars = 200; // Adjust the number of stars here
+
+    for (let i = 0; i < numStars; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.left = `${Math.random() * 100}%`;
+      star.style.top = `${Math.random() * 100}%`;
+      star.style.backgroundColor = `rgb(
+        ${Math.floor(Math.random() * 256)},
+        ${Math.floor(Math.random() * 256)},
+        ${Math.floor(Math.random() * 256)}
+      )`;
+      star.style.animationDuration = `${Math.random() * 2 + 1}s`;
+      starsContainer.appendChild(star);
+    }
+  </script>
+</body>
+</html>

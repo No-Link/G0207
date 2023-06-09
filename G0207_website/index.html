@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="styles/index.css">
+
+    <style>
+      /* Add custom styles here */
+      .animation-decoration {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: rgb(233, 7, 7);
+        border-radius: 50%;
+        animation: animateDecoration 1s infinite;
+      }
+  
+      @keyframes animateDecoration {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+    </style>
+    
+  </head>
+  <body>
+    <header>
+      <h1>Fake news</h1>
+        <nav>
+          <ul>
+              <li>
+                <a href="#">Topic</a>
+                <ul class = "submenu">
+                  <a href="misc/about_topic.html">About Topic</a>
+                  <a href="misc/why_this_topic.html">Why this Topic?</a>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Opportunities</a>
+                <ul class = "submenu">
+                  <a href="misc/opp2.html">Opportunities</a>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Risk</a>
+                <ul class = "submenu">
+                  <a href="misc/risk1.html">SOCIAL RISKS</a>
+                  <a href="misc/risk2.html">PHYSICAL RISKS</a>
+                  <a href="misc/risk3.html">ECONOMIC RISKS</a>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Choices</a>
+                <ul class = "submenu">
+                  <a href="misc/choice1.html">Introduction</a>
+                  <a href="misc/choice2.html">challenges in indentifying disinformation</a>
+                  <a href="misc/choice3.html">choices to spot fake information</a>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Ethical Reflections</a>
+                <ul class = "submenu">
+                  <a href="misc/team_members.html">Team members</a>
+                  <a href="misc/role.html">Our roles</a>
+                </ul>
+              </li>
+              <li>
+                <a href="#">References</a>
+                <ul class = "submenu">
+                  <a href="misc/reference.html">Our reference</a>
+                 <!-- <a href="#">item 2</a>
+                  <a href="#">item 3</a>-->
+                </ul>
+              </li>
+              <li>
+                <a href="#">Process Support</a>
+                <ul class = "submenu">
+                  <a href="misc/meeting_min.html">Meeting minutes</a>
+                </ul>
+              </li>
+          </ul>
+        </nav>
+      </header>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/frjITitjisY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  
+  <div class="starry-background">
+    <div class="stars-container">
+      <!-- Stars will be dynamically generated here -->
+    </div>
+  </div>
+
+  <script>
+    // JavaScript code to generate stars and apply random colors
+    const starsContainer = document.querySelector('.stars-container');
+    const numStars = 200; // Adjust the number of stars here
+
+    for (let i = 0; i < numStars; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.left = `${Math.random() * 100}%`;
+      star.style.top = `${Math.random() * 100}%`;
+      star.style.backgroundColor = `rgb(
+        ${Math.floor(Math.random() * 256)},
+        ${Math.floor(Math.random() * 256)},
+        ${Math.floor(Math.random() * 256)}
+      )`;
+      star.style.animationDuration = `${Math.random() * 2 + 1}s`;
+      starsContainer.appendChild(star);
+    }
+  </script>
+
+  </body>
+</html>
