@@ -27,5 +27,5 @@ The choices we make in our daily lives, from small decisions like what food to b
 Edward Keith: Presentation Lead, topic description and introduction, research related to examples and relevance/risk\
 Junxiu Wu: Programming Lead, website construction\
 Nikita Rawat: Research Lead, research related to definitions, opportunity and choices\
-Shared: Content generation, research dives and information gathering, edits\
+Shared: Content generation, research dives and information gathering, edits
 
